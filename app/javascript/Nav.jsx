@@ -21,7 +21,7 @@ export default class Nav extends React.Component {
   render() {
     return (
       <div>
-        <Navigation theme={theme} type='vertical' actions={actions} />
+        <Navigation theme={theme} type='vertical' actions={actions} className="test-button" />
       </div>
     )
   }
