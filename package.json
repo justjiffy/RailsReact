@@ -4,11 +4,16 @@
   "dependencies": {
     "@rails/webpacker": "^3.0.1",
     "babel-preset-react": "^6.24.1",
+    "postcss": "^6.0.11",
+    "postcss-cssnext": "^3.0.2",
     "prop-types": "^15.5.10",
     "react": "^15.6.1",
     "react-dom": "^15.6.1"
   },
   "devDependencies": {
+    "postcss-loader": "^2.0.6",
+    "react-toolbox": "^2.0.0-beta.12",
+    "react-toolbox-themr": "^1.0.2",
     "webpack-dev-server": "^2.7.1"
   }
 }
