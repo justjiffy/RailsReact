@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Navigation from 'react-toolbox/lib/navigation';
-// import theme from './NavTheme.css';
+import Navigation from 'react-toolbox/lib/navigation/Navigation';
+import theme from './NavTheme.css';
 
 
 const actions = [
