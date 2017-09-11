@@ -11,13 +11,28 @@ import theme from './src/toolbox/theme'
 
 import Nav from '../Nav'
 
+import PageEvent from './event';
+
+class PageIndex extends React.Component {
+  constructor(props){
+    super(props);
+    this.state = { currentView: "index" }
+  }
+
+  render() {
+    return (
+      <div>
+        <Nav className="nav-container" />
+        <div>Home Page!</div>
+       </div>
+    );
+  }
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
     <ThemeProvider theme={theme}>
-       <div>
-         <Nav className="nav-container" />
-         <div>Home Page!</div>
-        </div>
+      <PageIndex />
      </ThemeProvider>,
     document.body.appendChild(document.createElement('div')),
   )

@@ -6,19 +6,17 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types'
 
-import ThemeProvider from 'react-toolbox/lib/ThemeProvider'
-import theme from './src/toolbox/theme'
-
 import Nav from '../Nav'
+export default class PageEvent extends React.Component {
+  constructor(props){
+    super(props);
+  }
 
-document.addEventListener('DOMContentLoaded', () => {
-  ReactDOM.render(
-    <ThemeProvider theme={theme}>
+  render() {
+    return (
       <div>
-       <Nav className="nav-container" />
-       <div>EVENT PAGE</div>
+        <Nav />
       </div>
-     </ThemeProvider>,
-    document.body.appendChild(document.createElement('div')),
-  )
-})
+    );
+  }
+}
