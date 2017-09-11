@@ -9,26 +9,15 @@ import PropTypes from 'prop-types'
 import ThemeProvider from 'react-toolbox/lib/ThemeProvider'
 import theme from './src/toolbox/theme'
 
-import { Button } from 'react-toolbox/lib/button/Button'
-
 import Nav from '../Nav'
-
-const Hello = props => (
-  <div>Hello {props.name}!</div>
-)
-
-Hello.defaultProps = {
-  name: 'David'
-}
-
-Hello.propTypes = {
-  name: PropTypes.string
-}
 
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
     <ThemeProvider theme={theme}>
-       <Nav />
+      <div>
+       <Nav className="nav-container" />
+       <div>EVENT PAGE</div>
+      </div>
      </ThemeProvider>,
     document.body.appendChild(document.createElement('div')),
   )

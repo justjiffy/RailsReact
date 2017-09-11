@@ -14,18 +14,9 @@
  *= require_self
  */
 
+
+
+
  * {
-  text-transform: uppercase;
- }
-
- .test-button {
-  width: 20%;
-  min-width: 120px;
- }
-
- .test-button > * {
-  background: black;
-  color: white;
-  display: block;
-  width: 100%;
+    font-family: Arial;
  }
